@@ -3,14 +3,30 @@ package com.softstrem.dto;
 import java.time.LocalDate;
 
 import com.softstrem.entities.Client;
+import com.softstrem.valitations.UniquiValue;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PastOrPresent;
+import jakarta.validation.constraints.Size;
 
 public class ClientDTO {
 
 	private Long id;
+	
+	@NotBlank(message = "Campo obrigatório")
+	@Size(min = 3, message = "O campo name precisa ter no minimo 3 caracteres")
 	private String name;
+	
+	@NotBlank(message = "Campo obrigatório")
+	@Size(min = 11, max = 11, message = "Campo CPF precisa ter exatamente 11 caracteres")
+	@UniquiValue (message = "O CPF informado já existe na base de dados")
 	private String cpf;
+	
 	private Double income;
+	
+	@PastOrPresent(message = "O campo birthDate não pode ser uma data futura")
 	private LocalDate birthDate;
+	
 	private Integer childern;
 
 	public ClientDTO(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer childern) {
