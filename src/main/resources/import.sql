@@ -13,4 +13,4 @@ INSERT INTO TB_CLIENT (name, cpf, income, birth_Date, childern) VALUES ('Mariana
 INSERT INTO TB_CLIENT (name, cpf, income, birth_Date, childern) VALUES ('Luciana Castro', '01234567890', 2600.00, '1994-03-25', 5);
 INSERT INTO TB_CLIENT (name, cpf, income, birth_Date, childern) VALUES ('Antonio Cardoso', '09876543210', 3654.00, '1996-08-26', 3);
 INSERT INTO TB_CLIENT (name, cpf, income, birth_Date, childern) VALUES ('Alexandre Mendes', '08765432109', 5200.00, '1997-05-12', 0);
-
+--INSERT INTO TB_CLIENT (name, cpf, income, birth_Date, childern) VALUES ('Alexandre Mendes', '08765432109', 5200.00, '1997-05-12', 0);

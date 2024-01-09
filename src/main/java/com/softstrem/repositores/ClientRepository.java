@@ -8,4 +8,6 @@ import com.softstrem.entities.Client;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
+	boolean existsByCpf(String value);
+
 }
