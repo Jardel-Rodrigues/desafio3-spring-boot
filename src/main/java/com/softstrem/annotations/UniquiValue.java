@@ -1,4 +1,4 @@
-package com.softstrem.valitations;
+package com.softstrem.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

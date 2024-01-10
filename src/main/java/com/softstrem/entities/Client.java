@@ -25,20 +25,20 @@ public class Client {
 
 	private Double income;
 	private LocalDate birthDate;
-	private Integer childern;
+	private Integer children;
 
 	public Client() {
 
 	}
 
-	public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer childern) {
+	public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
 		this.birthDate = birthDate;
-		this.childern = childern;
+		this.children = children;
 	}
 
 	public Long getId() {
@@ -81,12 +81,12 @@ public class Client {
 		this.birthDate = birthDate;
 	}
 
-	public Integer getChildern() {
-		return childern;
+	public Integer getChildren() {
+		return children;
 	}
 
-	public void setChildern(Integer childern) {
-		this.childern = childern;
+	public void setChildren(Integer children) {
+		this.children = children;
 	}
 
 	@Override

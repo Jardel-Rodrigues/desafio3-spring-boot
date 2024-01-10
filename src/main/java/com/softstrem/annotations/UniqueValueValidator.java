@@ -1,4 +1,4 @@
-package com.softstrem.valitations;
+package com.softstrem.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
